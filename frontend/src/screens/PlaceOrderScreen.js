@@ -29,7 +29,7 @@ const reducer = (state, action) => {
 function PlaceOrderScreen() {
   const navigate = useNavigate();
 
-  const [{ loading, error }, dispatch] = useReducer(reducer, {
+  const [{ loading }, dispatch] = useReducer(reducer, {
     loading: false,
     error: '',
   });
